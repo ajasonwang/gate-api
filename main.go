@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "cm.paic.com.cn/practise/GateAPI/cmd"
+import "cm.yourcompanyname.com/practise/GateAPI/cmd"
 
 func main() {
 	cmd.Execute()

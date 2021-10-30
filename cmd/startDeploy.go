@@ -216,7 +216,7 @@ var startDeployCmd = &cobra.Command{
 		r, _ := regexp.Compile(`^[a-z-A-Z]+_.*\d{1,3}$`)
 		b := r.MatchString(versionname)
 		if b != true {
-			log.Fatal("JIRA版本名称格式不符合规定，正确的格式例子：SOAR_1.21.22")
+			log.Fatal("JIRA版本名称格式不符合规定，正确的格式例子：APPX_1.21.22")
 			os.Exit(1)
 		}
 		if len(envname) == 0 {
@@ -231,8 +231,8 @@ func init() {
 
 	startDeployCmd.Flags().StringVar(&ju, "ju", "", "jira login username")
 	startDeployCmd.Flags().StringVar(&jp, "jp", "", "jira login password")
-	startDeployCmd.Flags().StringVar(&uri, "uri", "192.168.5.26:1180", "gate uri")
-	startDeployCmd.Flags().StringVar(&gu, "gu", "cmteam", "gate login username")
+	startDeployCmd.Flags().StringVar(&uri, "uri", "192.168.100.100:1180", "gate uri")
+	startDeployCmd.Flags().StringVar(&gu, "gu", "", "gate login username")
 	startDeployCmd.Flags().StringVar(&gp, "gp", "", "gate login password")
 	startDeployCmd.Flags().StringVar(&project, "project", "", "jira project name, eg: fleet")
 	startDeployCmd.Flags().StringVar(&versionname, "versionname", "", "jira release version name, eg: SOAR_1.21.22")

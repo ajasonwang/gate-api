@@ -79,7 +79,7 @@ var endDeployCmd = &cobra.Command{
 
 func init() {
 
-	endDeployCmd.Flags().StringVar(&uri, "uri", "192.168.5.26:1180", "gate uri")
+	endDeployCmd.Flags().StringVar(&uri, "uri", "192.168.100.100:1180", "gate uri")
 	endDeployCmd.Flags().StringVar(&gu, "gu", "", "gate login username")
 	endDeployCmd.Flags().StringVar(&gp, "gp", "", "gate login password")
 

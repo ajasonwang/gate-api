@@ -1,4 +1,4 @@
-### First Golang cli tool - CM & Gate API Intergration
+### First Golang cli tool - API Intergration
 
 #### dep install
 
@@ -25,13 +25,13 @@ GateAPI.exe version
 query project id by name
 
 ```shell​    
-GateAPI.exe getProjectId --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.5.26:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME>
+GateAPI.exe getProjectId --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.100.100:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME>
 ```
 
 POST jenkins deploy data to Gate
 ​    
 ```shell​ 
-GateAPI.exe startDeploy --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.5.26:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME> --versionname <JIRA_VERSION_NAME> --component <DEPLOY_ITEMS> --envname <DEPLOY_ENV>
+GateAPI.exe startDeploy --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.100.100:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME> --versionname <JIRA_VERSION_NAME> --component <DEPLOY_ITEMS> --envname <DEPLOY_ENV>
 ```
 
 #### Jenkins Intergration
@@ -51,5 +51,5 @@ chmod 755 GateAPI
 ```
 	
 ```shell​ 
-GateAPI.exe startDeploy --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.5.26:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME> --versionname <JIRA_VERSION_NAME> --envname <DEPLOY_ENV> --teams "ACE TAP" --stacks "XXXTradingDataServices XXXTradingServices" --services "cmQueryService cmQueryServiceDemo"
+GateAPI.exe startDeploy --ju <JIRA_USER> --jp <JIRA_PASS> --uri 192.168.100.100:1180 --gu <GATE_USER> --gp <GATE_PASS> --project <JIRA_PROJECTNAME> --versionname <JIRA_VERSION_NAME> --envname <DEPLOY_ENV> --teams "ACE TAP" --stacks "XXXTradingDataServices XXXTradingServices" --services "cmQueryService cmQueryServiceDemo"
 ```
