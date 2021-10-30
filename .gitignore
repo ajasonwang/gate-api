@@ -1,0 +1,6 @@
+.vscode/
+main
+*.bat
+*.exe
+.idea/
+vendor/
