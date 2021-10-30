@@ -52,7 +52,7 @@ var stacks string
 var services string
 var deployid string
 
-var loginURL = "http://jirait.paic.com.cn:8080/login.jsp"
+var loginURL = "http://jirait.yourcompanyname.com:8080/login.jsp"
 
 func readFile(file string) string {
 	fileData, err := ioutil.ReadFile(file)

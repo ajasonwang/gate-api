@@ -70,7 +70,7 @@ func checkReleaseVersion(client *http.Client, project string, version string) bo
 
 	log.Println("Call checkReleaseVersion()")
 
-	endpoint := "http://jirait.paic.com.cn:8080/rest/api/2/project/" + project + "/versions"
+	endpoint := "http://jirait.yourcompanyname.com:8080/rest/api/2/project/" + project + "/versions"
 
 	log.Println("> 4st request - check release version create from jira api")
 	req, err := http.NewRequestWithContext(traceCtx, http.MethodGet, endpoint, nil)
@@ -114,7 +114,7 @@ func getProjectID(client *http.Client, jiraLoginUser string, jiraLoginPass strin
 
 	log.Println("Call getProjectID()")
 
-	endpoint := "http://jirait.paic.com.cn:8080/rest/api/2/project/" + project
+	endpoint := "http://jirait.yourcompanyname.com:8080/rest/api/2/project/" + project
 
 	values := url.Values{}
 	values.Set("os_username", jiraLoginUser)
